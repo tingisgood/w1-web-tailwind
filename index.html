@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <!-- <link href="style.css" rel="stylesheet"> -->
+  <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAMAMOO Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="m-0 font-['IM_FELL_Great_Primer_SC'] bg-black text-white">
+
+  <!-- Navbar -->
+  <header class="flex justify-between items-center bg-[#222222] px-[100px] py-[1%] sticky top-0 flex-wrap">
+    <!-- header class=navbar -->
+    <div class="text-xl font-bold pr-5 ml-[5%]">MAMAMOO</div>
+    <!-- div class="logo -->
+    <nav class="flex flex-wrap gap-[30px] mr-5">
+      <a href="#" class="text-white hover:text-sky-400 text-xl">about mamamoo</a>
+      <a href="#" class="text-white hover:text-sky-400 text-xl">gemstone</a>
+      <a href="#" class="text-white hover:text-sky-400 text-xl">process</a>  
+      <a href="#" class="text-white hover:text-sky-400 text-xl">diamond</a>
+      <a href="#" class="text-white hover:text-sky-400 text-xl">new album</a>
+      <a href="#" class="text-white hover:text-sky-400 text-xl">language</a>
+    </nav>
+    <div class="mr-[8%]">
+      <a href="#" class="text-white hover:text-sky-400">LOGIN</a>
+      <a href="#" class="text-white hover:text-sky-400">SIGN UP</a>
+    </div>
+  </header>
+
+  <!-- Members -->
+  <section class="grid xl:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-[2%] p-8 mt-[5%] mx-[10%] " >
+    <!-- section class="members" -->
+    <div class="member">
+      <!-- div class="member -->
+      <img src="images/solar.png" alt="Solar" class="w-[90%] rounded-lg object-cover">
+      <h2 class="text-center mt-[8%] text-xl">SOLAR</h2>
+      <ul class="text-center mt-[5%] font-['Roboto']">
+        <li>Sorasido</li>
+        <li>Spit it out</li>
+      </ul>
+    </div>
+    <div class="member">
+      <img src="images/moonbyul.png" alt="Moonbyul" class="w-[90%] rounded-lg object-cover">
+      <h2 class="text-center mt-[8%] text-xl">MOONBYUL</h2>
+      <ul class="text-center mt-[5%] font-['Roboto']">
+        <li>Studio moonnight</li>
+        <li>Eclipse</li>
+      </ul>
+      
+    </div>
+    <div class="member">
+      <img src="images/wheein.png" alt="Wheein" class="w-[90%] rounded-lg object-cover">
+      <h2 class="text-center mt-[8%] text-xl">WHEEIN</h2>
+      <ul class="text-center mt-[5%] font-['Roboto']">
+        <li>The Live Label</li>
+        <li>Redd</li>
+      </ul>
+    </div>
+    <div class="member">
+      <img src="images/hwasa.png" alt="Hwasa" class="w-[90%] rounded-lg object-cover">
+      <h2 class="text-center mt-[8%] text-xl">HWASA</h2>
+      <ul class="text-center mt-[5%] mb-[10px] font-['Roboto']">
+        <li>I live alone</li>
+        <li>Maria</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Album / Concert / Live -->
+  <section class="grid xl:grid-cols-3  md:grid-cols-2  sm:grid-cols-1 gap-[10%] p-[5%] mx-[20%] mb-[2%] md:mt-[5%] text-center sm:mt-[20%] ">
+    <!-- section cards -->
+    <div class="bg-gray-200 text-black p-10 rounded-lg shadow-[inset_0_4px_10px_rgba(0,0,0,2.3)]">
+      <!-- div card -->
+      <h3 class="font-bold text-xl mb-[10px] ">Album</h3>
+      <ol class="text-center font-['Roboto']">
+        <li>1.Melting</li>
+        <li>2.Reality in black</li>
+        <li>3.Hello</li>
+        <li>4.Piano man</li>
+      </ul>
+      <button class="mt-[10%] px-3 py-2 bg-black text-white rounded-md hover:bg-sky-300 hover:text-black transition ">more...</button>
+    </div>
+    <div class="bg-gray-200 text-black p-10 rounded-lg shadow-[inset_0_4px_10px_rgba(0,0,0,2.3)]">
+      <h3 class="font-bold text-xl mb-[10px]">Concert</h3>
+      <ol class="text-center font-['Roboto']">
+        <li>1.2021 at Taipei</li>
+        <li>2.2022 at NTUE</li>
+        <li>3.Korea, JP, USA</li>
+        <li>4.Solo Concert</li>
+      </ul>
+      <button class="mt-[10%] px-3 py-2 bg-black text-white rounded-md hover:bg-sky-300 hover:text-black transition">more...</button>
+    </div>
+    <div class="bg-gray-200 text-black p-10 rounded-lg shadow-[inset_0_4px_10px_rgba(0,0,0,2.3)]">
+      <h3 class="font-bold text-xl mb-[10px]">Live</h3>
+      <ol class="text-center font-['Roboto']">
+        <li>1.Vlive</li>
+        <li>2.Instagram</li>
+        <li>3.Youtube</li>
+        <li>4.Twitter</li>
+      </ul>
+      <button class="mt-[10%] px-3 py-2 bg-black text-white rounded-md hover:bg-sky-300 hover:text-black transition">more...</button>
+    </div>
+  </section>
+
+  <!-- Carousel -->
+  <section class="relative max-w-full overflow-hidden lg:p-[5%] lg:mx-[20%] lg:mt-[0%] sm:pt-[10%]" >
+    <div class="flex transition-transform duration-500 ease-in-out w-full lg:mt-[0%] ">
+      <img src="images/hip3.png" alt="Mamamoo 3" class="w-full flex-shrink-0 object-cover">
+      <!-- <img src="images/hip1.png" alt="Mamamoo 1" class="w-full flex-shrink-0 object-cover">
+      <img src="images/hip2.jpg" alt="Mamamoo 2" class="w-full flex-shrink-0 object-cover"> -->
+      
+    </div>
+    <button class="absolute top-1/2 left-2 -translate-y-1/2 bg-black/60 text-white p-2 rounded-full hover:bg-gray-300 hover:text-black">&#10094;</button>
+    <button class="absolute top-1/2 right-2 -translate-y-1/2 bg-black/60 text-white p-2 rounded-full hover:bg-gray-300 hover:text-black">&#10095;</button>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#111] text-center p-5 text-sm text-gray-400 font-['Roboto'] p-[2%]">
+    <p>BECOME MOOMOO | JOIN OUR GROUP</p>
+    <p>AUTHOR - Li Ting</p>
+    <p>FOLLOW MAMAMOO</p>
+    <p>© 2025 reality in BLACK | MAMAMOO</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
